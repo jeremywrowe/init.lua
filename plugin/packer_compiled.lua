@@ -176,6 +176,11 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/Users/jeremyrowe/.local/share/nvim/site/pack/packer/opt/vim-rails",
     url = "https://github.com/tpope/vim-rails"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/jeremyrowe/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

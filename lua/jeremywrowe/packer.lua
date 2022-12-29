@@ -20,8 +20,8 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('tpope/vim-fugitive')
-
-  
+  use('tpope/vim-surround')
+  use { 'tpope/vim-rails', ft = { 'ruby' } }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -45,9 +45,5 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use {
-	  'tpope/vim-rails',
-	  ft = { 'ruby' },
-  }
 end)
 
