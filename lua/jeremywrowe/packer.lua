@@ -17,13 +17,15 @@ return require('packer').startup(function(use)
 	  end
   })
 
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('editorconfig/editorconfig-vim')
-  use('vim-test/vim-test')
+  use('christoomey/vim-tmux-navigator')
   use('christoomey/vim-tmux-runner')
+  use('editorconfig/editorconfig-vim')
   use('theprimeagen/harpoon')
   use('tpope/vim-fugitive')
   use('tpope/vim-surround')
+  use('vim-test/vim-test')
+
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use { 'tpope/vim-rails', ft = { 'ruby' } }
 
   use {
