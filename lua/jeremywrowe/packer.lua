@@ -10,12 +10,20 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
+	  'ellisonleao/gruvbox.nvim',
+	  as = 'gruvbox',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+		  vim.cmd('colorscheme gruvbox')
 	  end
   })
+
+  use {
+  "folke/which-key.nvim",
+  config = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 300
+  end
+}
 
   use('christoomey/vim-tmux-navigator')
   use('christoomey/vim-tmux-runner')
