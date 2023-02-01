@@ -33,6 +33,13 @@ return require('packer').startup(function(use)
   use('tpope/vim-surround')
   use('vim-test/vim-test')
 
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+        'nvim-tree/nvim-web-devicons',
+      },
+  }
+
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use { 'tpope/vim-rails', ft = { 'ruby' } }
 
